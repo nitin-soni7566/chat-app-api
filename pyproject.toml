@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "chat-app-api"
+version = "0.1.0"
+description = ""
+authors = ["nitin-soni <nitinsoni815@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.112.2"}
+sqlalchemy = "^2.0.32"
+pyjwt = "^2.9.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+bcrypt = "3.2.2"
+psycopg2 = "^2.9.9"
+redis = "^5.0.8"
+boto3 = "^1.35.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
